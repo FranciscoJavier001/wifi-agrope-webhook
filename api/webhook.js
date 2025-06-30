@@ -9,7 +9,6 @@ export default async function handler(req, res) {
 🚨 *Nuevo dispositivo conectado*:
 📱 Nombre: ${data.deviceName || 'Desconocido'}
 💻 MAC: ${data.mac || 'No disponible'}
-🕒 Hora: ${new Date().toLocaleTimeString()}
 `;
 
     await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
